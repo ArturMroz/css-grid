@@ -154,6 +154,55 @@
       font-weight: 100;
       margin: 0;
     }
+
+    .post {
+      display: grid;
+      grid-gap: 10px 50px;
+      grid-template-columns: 3fr 12fr 5fr;
+      max-width: 1100px;
+      margin: 100px auto;
+      /* justify-items: center; */
+    }
+
+    .post > * {
+      grid-column: 2 / -2;
+    }
+
+    .post > figure {
+      margin: 0;
+      grid-column: 1 / -1;
+    }
+
+    figcaption {
+      font-size: 10px;
+    }
+
+    .post blockquote {
+      grid-column: 1 / -1;
+      margin: 0;
+      font-size: 60px;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .tip {
+      background: #f4f4f4;
+      padding: 10px;
+      align-self: start;
+      grid-row: span 5;
+    }
+
+    .tip-left {
+      grid-column: 1 / span 1;
+      text-align: right;
+      border-right: 2px solid var(--yellow);
+    }
+
+    .tip-right {
+      grid-column: span 1 / -1;
+      text-align: left;
+      border-left: 2px solid var(--yellow);
+    }
   </style>
 
 </body>
